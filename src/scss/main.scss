@@ -1,10 +1,4 @@
-h1 {
-    color: red;
-}
+@import './base/reset';
+@import './base/typography';
+@import './pages/home';
 
-div {
-    background-color: pink;
-    p{
-        color: blue;
-    }
-}

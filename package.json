@@ -1,11 +1,11 @@
 {
   "source": "src/index.html",
   "scripts": {
-    "start": "parcel --open chrome",
-    "build": "parcel build"
+    "start": "parcel src/index.html --open chrome",
+    "build": "parcel build src/index.html"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.6.2",
-    "parcel": "^2.6.2"
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.54.0"
   }
 }
