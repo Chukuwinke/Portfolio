@@ -9,7 +9,24 @@
 .logo{
     font-size: 2rem;
 }
+.menu__container{
+    background-color: pink;
+    position: fixed;
+    right: -100%;
+    top: 72px;
+    gap: 0;
+    width: 80%;
+    text-align: center;
+    transition: 0.3s;
+
+}
 .menu{
     display: flex;
-
+    flex-direction: column;
+    &__item{
+        margin: 16px 0;
+    }
+}
+.menu__container.active{
+    right: 0;
 }
