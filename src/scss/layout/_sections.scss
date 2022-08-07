@@ -1,0 +1,46 @@
+.hero{
+    &__heading{
+        
+        font-size: $fs-400;
+        margin-bottom: 15px;
+    }
+
+    h2{
+        font-size: $fs-600;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+    }
+}
+
+
+.main__headers-container{
+    text-transform: capitalize;
+}
+
+.main{
+    counter-reset: section 0;
+    padding: 0 20px;
+    
+    &__headers-container{
+        position: relative;
+        margin: 10px 0 20px;
+        
+    }
+    &__numbered-section{
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+    }
+    &__numbered-section::before{
+        counter-increment: section 1;
+        content: "0" counter(section) ".";
+    }
+    &__numbered-section::after{
+        content: '';
+        height: 2px;
+        background-color: blue;
+        width: 100%;
+        margin-left:10px;
+        
+    }
+}

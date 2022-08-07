@@ -1,3 +1,17 @@
-html{
-    font-size: 16px;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap');
+
+:root{
+    font-size: $fs-base;
+    font-family: $ff-base;
+    font-weight: 400;
+    
+}
+
+h2{
+    font-size: $fs-500;
+    font-family: $ff-headings;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
 }
