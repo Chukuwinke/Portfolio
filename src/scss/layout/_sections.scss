@@ -1,14 +1,74 @@
+body{
+    //background-image: linear-gradient(45deg, #06283D, #1363DF, #47B5FF, #DFF6FF, transparent);
+    background-color: #100720;
+}
+
+
 .hero{
+    position: relative;
+    padding: 20px 0 40vh;
+    
+    //min-height: 100vh;
     &__heading{
         
         font-size: $fs-400;
         margin-bottom: 15px;
     }
 
+    .hero__canvas{
+        width: 100%;
+        height: 300px;
+    }
+    h1{
+        color: $fc-Highlights-blue;
+        margin: 15px 0 20px;
+    }
     h2{
-        font-size: $fs-600;
+        font-size: $fs-l;
         text-transform: capitalize;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
+        color: $fc-Highlights-slate;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        
+        
+    }
+    h3{
+        font-size: $fs-600;
+        color: #E0E0EC;
+        margin-bottom: 50px;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        line-height:$lh-L;
+    }
+    &__text-container{
+        position: absolute;
+        padding: 0 20px;
+        .hero__desc-box{
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            margin-bottom: 60px;
+            line-height: $lh-paragraphs;
+            
+        }
+        .resume__container{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .download__resume{
+            display: block;
+            width: fit-content;
+            height: fit-content;
+            text-decoration: none;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            border: 2px solid $fc-Highlights-blue;
+            color: white;
+            font-weight: bold;
+            line-height: 25px;
+        }
+        
     }
 }
 
@@ -19,7 +79,7 @@
 
 .main{
     counter-reset: section 0;
-    padding: 0 20px;
+    //padding: 0 20px;
     
     &__headers-container{
         position: relative;
@@ -34,11 +94,12 @@
     &__numbered-section::before{
         counter-increment: section 1;
         content: "0" counter(section) ".";
+        color: $fc-Highlights-blue;
     }
     &__numbered-section::after{
         content: '';
         height: 2px;
-        background-color: blue;
+        //background-color: blue;
         width: 100%;
         margin-left:10px;
         
